@@ -11,8 +11,8 @@ class MyCalculator implements AdvancedArithmetic {
         int sum  = 0;
         int sqrt = (int) Math.sqrt(n);
         for (int i = 1; i <= sqrt; i++) {
-            if (n % i == 0) { // if "i" is a divisor
-                sum += i + n/i; // add both divisors
+            if (n % i == 0) { 
+                sum += i + n/i; 
             }
         }
       
