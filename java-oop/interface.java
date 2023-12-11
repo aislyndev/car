@@ -5,8 +5,8 @@ interface AdvancedArithmetic {
 }
 
 class MyCalculator implements AdvancedArithmetic {
-    //  Time Complexity: O(n^(1/2))
-    // Space Complexity: O(1)
+    
+    
     public int divisor_sum(int n) {
         int sum  = 0;
         int sqrt = (int) Math.sqrt(n);
@@ -15,7 +15,7 @@ class MyCalculator implements AdvancedArithmetic {
                 sum += i + n/i; // add both divisors
             }
         }
-        /* If sqrt is a divisor, we should only count it once */
+      
         if (sqrt * sqrt == n) {
             sum -= sqrt;
         }
@@ -33,9 +33,7 @@ class Solution {
         System.out.print(my_calculator.divisor_sum(n) + "\n");
         sc.close();
     }
-    /*
-     *  ImplementedInterfaceNames method takes an object and prints the name of the interfaces it implemented
-     */
+    
     static void ImplementedInterfaceNames(Object o) {
         Class[] theInterfaces = o.getClass().getInterfaces();
         for (int i = 0; i < theInterfaces.length; i++) {
